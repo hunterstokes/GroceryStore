@@ -17,7 +17,9 @@ const recipe = {
     title: 'Author',
     type: 'string',
 },{
-
+    name: 'mediaSource',
+    title: 'Media Source',
+    type: 'string',
 }],
 };
 
