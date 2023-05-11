@@ -2,14 +2,14 @@ import { render } from "react-dom";
 import Link from "next/link";
 
 export default function Navbar() {
-    const dropDownMenu = () => {
-        let x = document.getElementById("dropDownMenu");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";'
-        }
-    }
+    // const dropDownMenu = () => {
+    //     let x = document.getElementById("dropDownMenu");
+    //     if (x.className === "topnav") {
+    //         x.className += " responsive";
+    //     } else {
+    //         x.className = "topnav";'
+    //     }
+    // }
 
     return (
         <header className=" bg-teal-500">
