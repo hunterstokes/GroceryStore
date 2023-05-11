@@ -3,25 +3,29 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <div className="top-0 m-0">
-        <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6 top-0 sticky">
-            <div className="flex items-center flex-shrink-0 text-white mr-6">
-                <span className="font-semibold text-xl tracking-tight">
-                    <h1>Logo</h1>
-                    <span className="text-sm justify-between">Links 
+        <header className=" bg-teal-500">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+                    <Link href='/'>
+                        <h1 className="text-xl fa-solid fa-home">Logo</h1> 
+                    </Link>
+                    <div className="md:hidden space-x-10 lg:flex lg:ml-10">
                         <Link href='/about'>
-                            about filler
+                            about
                         </Link>
                         <Link href='/hours'>
-                            hours + location filler
+                            hours & location
                         </Link>
                         <Link href='/blog'>
-                            blog filler
+                            blog
                         </Link>
-                    </span>
-                </span>
-            </div>
-        </nav >
-        </div>
+                    </div>
+                        <div className="">
+                        <Link href='/contact'>
+                            Contact
+                            <i className="fa-solid fa-envelope"></i>
+                        </Link>
+                        </div>
+            </nav >
+        </header>
     )
 }
