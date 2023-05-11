@@ -7,7 +7,10 @@ export default function Home() {
     
     <main className="m-0">
       <Navbar />
-      <h1 className="text-4xl font-bold text-center">This is my new page :) </h1>
+      <h1 className="text-4xl font-bold text-center">Piedmont Grocery</h1>
+      <br />
+
+      <br />
       <ol className="list-decimal list-inside text-2xl font-bold grid grid-flow-row justify-between" > Tasks
         <li><i className='fa-solid fa-home'></i>Navbar</li>
         <li><i className='fa-solid fa-object-group'></i>Hero Section</li>
