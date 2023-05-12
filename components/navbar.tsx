@@ -17,7 +17,8 @@ export default function Navbar() {
                 <Link href='/'>
                     <h1 className="text-xl fa-solid fa-home">Logo</h1> 
                 </Link>
-                <div className="space-x-5 sm:hidden lg:flex lg:ml-10 font-medium box-content border-spacing-2">
+                <div className="space-x-5 lg:flex lg:ml-10 font-medium box-content border-spacing-2 max-[800px]:hidden">
+                    
                     <Link href='/about'>
                         About
                     </Link>
