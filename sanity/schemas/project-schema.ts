@@ -1,6 +1,6 @@
 const kitchentable = {
-  name: "recipe",
-  title: "Recipe",
+  name: "kitchenpost",
+  title: "Kitchen Table Post",
   type: "document",
   fields: [
     { name: "name", title: "Name", type: "string" },

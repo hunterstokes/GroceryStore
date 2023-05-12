@@ -12,17 +12,23 @@ export default function Navbar() {
     // }
 
     return (
-        <header className=" bg-teal-500">
+        <header className=" bg-green-800">
             <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <Link href='/'>
                     <h1 className="text-xl fa-solid fa-home">Logo</h1> 
                 </Link>
-                <div className="space-x-5 sm:hidden lg:flex lg:ml-10 font-light text-sm">
+                <div className="space-x-5 sm:hidden lg:flex lg:ml-10 font-medium box-content border-spacing-2">
                     <Link href='/about'>
                         About
                     </Link>
                     <Link href='/hours'>
                         Hours & Location
+                    </Link>
+                    <Link href='/departments'>
+                        Departments
+                    </Link>
+                    <Link href='/news'>
+                        News & Events
                     </Link>
                     <Link href='/blog'>
                         Blog
