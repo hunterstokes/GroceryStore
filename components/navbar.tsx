@@ -12,15 +12,15 @@ export default function Navbar() {
     // }
 
     return (
-        <header className=" bg-green-800">
+        <header className=" bg-white text-green-800">
             <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <Link href='/'>
                     <h1 className="text-xl fa-solid fa-home">Logo</h1> 
                 </Link>
                 <div className="space-x-5 lg:flex lg:ml-10 font-medium box-content border-spacing-2 max-[800px]:hidden">
                     
-                    <Link href='/about'>
-                        About
+                    <Link href='/history'>
+                        History
                     </Link>
                     <Link href='/hours'>
                         Hours & Location
@@ -37,7 +37,7 @@ export default function Navbar() {
                 </div>
                 <div className="text-lg">
                     <Link href='/contact'>
-                        <i className="fa-solid fa-envelope "></i>Contact
+                        <i className="fa-solid fa-envelope "></i> Contact
                     </Link>
                 </div>
             </div >
