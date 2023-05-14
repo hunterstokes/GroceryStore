@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Navbar from '@/components/navbar'
+import Footer from '@/components/foot'
 import Link from 'next/link'
 import { url } from 'inspector'
 
@@ -37,6 +38,7 @@ export default function Home() {
          
         </div>
         </section>
+        <Footer />
       </main>
   )
 }

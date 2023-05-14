@@ -27,6 +27,7 @@ body {
 
 }
 
-main, section {
-  background-image: linear-gradient(to bottom right, #334155, #166534)
+main {
+  background-image: linear-gradient(to bottom right, #334155, #166534);
 }
+
