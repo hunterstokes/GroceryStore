@@ -24,4 +24,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
 }
+
+main {
+  background-image: linear-gradient(to bottom right, #334155, #166534);
+}
+

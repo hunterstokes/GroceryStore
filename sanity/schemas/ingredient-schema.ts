@@ -13,3 +13,4 @@ const ingredient = {
     }
 ],
 }
+export default ingredient;
