@@ -10,7 +10,7 @@ export default function Home() {
     <main className="min-h-screen m-0 bg-gradient-to-br from-slate-700 to-green-800 ">
       <Navbar />
         <section className='grid p-5 grid-cols-2 gap-10 max-[800px]:grid-cols-1 align-middle'>
-          <div className='ml-10 max-[500px]:mx-5 p-5 rounded-2xl border-2'><h1 className="text-6xl pb-5 font-bold">Piedmont Grocery</h1><h3 className="text-3xl font-thin">Dedicated to bringing you the best and freshest ingredients. And then another bullshit sentance </h3></div>
+          <div className='ml-10 max-[500px]:mx-5 p-5 rounded-2xl border-2 bg-gradient-to-b from-slate-600 to-green-900'><h1 className="text-6xl pb-5 font-bold">Piedmont Grocery</h1><h3 className="text-3xl font-thin">Dedicated to bringing you the best and freshest ingredients. And then another bullshit sentance </h3></div>
         <div className='mr-10 ml-0 font-thin text-xl rounded-2xl px-5 py-10 max-[500px]:mx-5'>
         <p className='text-center '> This is the new replacement for the list to see how responsive the website is. 
         Navbar is set up just still needs styling
@@ -29,7 +29,7 @@ export default function Home() {
         <div className='p-3 justify-center'>
             <h1 className="text-5xl p-3 rounded-2xl text-start justify-start">About Us</h1>
             </div>
-            <div className='p-3 col-span-2 border-2 rounded-md bg-white text-green-900 bg-opacity-70'>
+            <div className='p-3 col-span-2 border-2 rounded-md bg-gray-100 text-green-900 bg-opacity-70'>
             <p className='p-3'>
                 For many years, it's been our goal to offer the very best products we can find. Along the way, we created the tastiest take out bar on Piedmont Avenue, expanded our horizons to find the best products all over the world. In doing this we ushered in the Bay Area's obsession with fresh, seasonal, and, of course, local food.
                 <br></br>
