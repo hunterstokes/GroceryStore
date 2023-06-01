@@ -11,7 +11,6 @@ export default async function News() {
             <section >
                 <Navbar />
                 <h1>News</h1>
-
             </section>
             <Footer />
         </main>
