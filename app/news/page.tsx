@@ -11,13 +11,6 @@ export default async function News() {
             <section >
                 <Navbar />
                 <h1>News</h1>
-           <div className="newsCards">
-                {recipe.map((recipe) => (
-                    <div key={recipe._id}>
-                        {recipe.name}{recipe.description}
-                    </div>
-                ))}
-            </div>
             </section>
             <Footer />
         </main>
