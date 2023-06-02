@@ -14,6 +14,7 @@ export async function getRecipe() {
         _createdAt,
         name,
         description,
+        ingredients,
 
 }`
   );

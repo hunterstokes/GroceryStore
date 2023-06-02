@@ -11,6 +11,16 @@ export default async function News() {
             <section >
                 <Navbar />
                 <h1>News</h1>
+                <div>
+                    {recipe.map((recipe: any) => (
+                        <div key={recipe._id}>
+                            <p>
+                                {recipe.name}
+                                {recipe.description}
+                            </p>
+                        </div>
+                    ))}
+                </div>
             </section>
             <Footer />
         </main>
