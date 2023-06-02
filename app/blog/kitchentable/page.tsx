@@ -1,18 +1,19 @@
-import { getRecipe } from "@/sanity/sanity-utils";
+import { getPost } from "@/sanity/sanity-utils";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/foot";
 
 export default async function kitchenTable() {
-  const recipe = await getRecipe();
+  const post = await getPost();
 
   return (
     <main>
       <Navbar />
       <div className="newsCards">
-        {recipe.map((recipe) => (
-          <div key={recipe._id}>
-            {recipe.name}
-            {recipe.description}
+        {post.map((post: any) => (
+          <div key={post._id}>
+            {post.name}
+            {post.description}
+            {post.recipe}
           </div>
         ))}
       </div>

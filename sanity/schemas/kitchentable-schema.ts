@@ -1,3 +1,6 @@
+import { title } from "process";
+import recipe from "./recipe-schema";
+
 const kitchentable = {
   name: "kitchenpost",
   title: "Kitchen Table Post",
@@ -16,6 +19,19 @@ const kitchentable = {
         title: 'Content',
         type: 'array',
         of: [{type: 'block'}]
+    }, {
+      name: 'recipe',
+      title: 'Recipe',
+      type: 'array',
+      of: [{
+        type: 'object',
+        fields: [{
+            name: 'recipe',
+            title: 'Recipe',
+            type: 'reference',
+            to: [{ type: 'recipe'}],
+        }]
+    }]
     }
   ],
 };
