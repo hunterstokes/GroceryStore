@@ -1,4 +1,4 @@
-import kitchentable from "./project-schema";
+import kitchentable from "./kitchentable-schema";
 import recipe from "./recipe-schema";
 import ingredient from "./ingredient-schema";
 
