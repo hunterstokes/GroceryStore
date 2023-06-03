@@ -12,7 +12,14 @@ const recipe = {
             name: 'description',
             title: 'Description',
             type: 'text',
-        }, {
+        }, 
+        {
+            name: 'ingredients',
+            title: 'Ingredients',
+            type: 'reference',
+            to: [{type: 'ingredient'}],
+        },
+        {
             name: 'ingredients',
             title: 'Ingredients',
             type: 'array',
