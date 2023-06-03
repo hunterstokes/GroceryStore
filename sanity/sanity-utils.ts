@@ -14,8 +14,10 @@ export async function getRecipe() {
         _createdAt,
         name,
         description,
-        ingredients,
-
+        "ingredients": *[_type == "ingredient"]{...},
+        "amount": *[_type == "amount"]{...},
+        "fraction": *[_type == "fraction"]{...},
+        "unit": *[_type == "unit"]{...},
 }`
   );
 }
@@ -35,6 +37,5 @@ export async function getPost() {
             description,
             recipe,
         }`
-
   );
 }
