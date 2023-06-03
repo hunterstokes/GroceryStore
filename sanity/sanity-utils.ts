@@ -14,11 +14,18 @@ export async function getRecipe() {
         _createdAt,
         name,
         description,
-        "ingredients": *[_type == "ingredient"]{...},
+        "ingredients": *[_type == "ingredients"]{...},
         "amount": *[_type == "amount"]{...},
         "fraction": *[_type == "fraction"]{...},
         "unit": *[_type == "unit"]{...},
-}`
+}`, 
+  groq`*[_type == "ingredients"]{
+        _id,
+        _createdAt,
+        name,
+        description,
+        "amount": *[_type == "amount"]{...},
+  }`
   );
 }
 

@@ -15,14 +15,13 @@ export default async function kitchenTable() {
         <Navbar />
         <h1>The Kitchen Table</h1>
         <div>
-          {recipe.map((recipe: any) => (
+          {recipe.map((recipe: any, ingredients: any) => (
             <div key={recipe._id}>
               <p>
                 {recipe.name}
                 {recipe.description}
-                {recipe.ingredients}
                 {recipe.instructions}
-                
+                {ingredients.name}
               </p>
             </div>
           ))}
