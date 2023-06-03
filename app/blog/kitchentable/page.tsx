@@ -6,19 +6,21 @@ import ingredient from "@/sanity/schemas/ingredient-schema";
 export default async function kitchenTable() {
   const recipe = await getRecipe();
   // TODO: RETURN INGREDIENTS PLS
-  const recipeIngredients = recipe.ingredient.map(())
-  return (
+    
+
+
+    
     <main className="min-h-screen">
       <section>
         <Navbar />
         <h1>The Kitchen Table</h1>
         <div>
-          {recipe.map((recipe: any) => (
+          {recipe.map((recipe: any, ingredients: object) => (
             <div key={recipe._id}>
               <p>
                 {recipe.name}
                 {recipe.description}
-                {recipeIngredients}
+                
               </p>
             </div>
           ))}
@@ -26,5 +28,5 @@ export default async function kitchenTable() {
       </section>
       <Footer />
     </main>
-  );
+  ;
 }
