@@ -1,7 +1,7 @@
 
 export default function Footer() {
     return (
-        <footer className=" flex pt-10 justify-evenly
+        <footer className=" bottom-0 mt-5 pb-5 bg-transparent fixed flex justify-evenly pt-5 w-full 
         ">
             <div className="">
                 <i className="fa-solid fa-home"></i>

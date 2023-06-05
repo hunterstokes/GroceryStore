@@ -11,23 +11,44 @@ export async function getRecipe() {
   return client.fetch(
     groq`*[_type == "recipe"]{
         _id,
-        _createdAt,
         name,
         description,
         ingredients[]->{
           ingredient->{
-            id,
+            _id,
             name,
-            description,
+            amount,
+            fraction,
+            unit,
+            description
           },
           _id,
           name,
-          description,
           amount,
           fraction,
-          unit,
-        },
-}`,
+          unit
+        }
+      }`
   );
 }
 
+export async function getIngredientsForRecipe(recipeId: string) {
+  const client = createClient({
+    projectId: "r6nc7qm6",
+    dataset: "production",
+    apiVersion: "2023-05-09",
+    useCdn: false,
+  });
+
+  return client.fetch(
+    groq`*[_type == "recipe" && _id == $recipeId][0].ingredients[].ingredient->{
+      _id,
+      name,
+      amount,
+      fraction,
+      unit,
+      description
+    }`,
+    { recipeId }
+  );
+}

@@ -1,28 +1,36 @@
-import { getRecipe } from "@/sanity/sanity-utils";
+import { getRecipe , getIngredientsForRecipe } from "@/sanity/sanity-utils";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/foot";
-import ingredient from "@/sanity/schemas/ingredient-schema";
-import {groq} from "next-sanity";
 
 export default async function kitchenTable() {
   const recipes = await getRecipe();
-  // TODO: RETURN INGREDIENTS PLS
-  
+
+  const recipeIngredients = await Promise.all(
+    recipes.map(async (recipe: any) => {
+      const ingredients = await getIngredientsForRecipe(recipe._id);
+      return {
+        ...recipe,
+        ingredients,
+      };
+    })
+  );
+
   return (
     <main className="min-h-screen">
       <section>
         <Navbar />
-        <h1>The Kitchen Table</h1>
+        <h1 className="text-5xl flex text-center justify-center pt-10 font-bold">The Kitchen Table</h1>
+
         <div className="m-autom p-5">
-          {recipes.map((recipe: any) => (
-            <div key={recipe._id}>
-              <h2>{recipe.name}</h2>
+          {recipeIngredients.map((recipe: any) => (
+            <div className="p-5" key={recipe._id}>
+              <h2 className="text-2xl font-bold">{recipe.name}</h2>
               <p>{recipe.description}</p>
+
+              <h2>Ingredients:</h2>
               <ul>
                 {recipe.ingredients.map((ingredient: any) => (
-                  <li key={ingredient._id}>
-                    {ingredient.name} - {ingredient.amount} {ingredient.fraction} {ingredient.unit}
-                  </li>
+                  <li className="pl-2 font-light" key={ingredient._id}>{ingredient.name}</li>
                 ))}
               </ul>
             </div>
