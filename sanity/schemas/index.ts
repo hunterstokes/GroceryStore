@@ -7,3 +7,4 @@ import altSchema from "./altschema-schema";
 const schemas = [kitchentable, recipe, ingredient, altSchema];
 
 export default schemas;
+

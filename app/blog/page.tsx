@@ -10,6 +10,7 @@ export default function Blog() {
         <Navbar />
         <h1>
             <Link href='blog/kitchentable'>Blog</Link></h1>
+
       </section>
     </main>
   );
