@@ -44,20 +44,6 @@ export default async function kitchenTable() {
             <h2>{kitchenTableData.name}</h2>
             <img src={kitchenTableData.image} alt={kitchenTableData.name} />
             <p>{kitchenTableData.content}</p>
-
-            {/* {kitchenTableData.recipe.map((recipe: any) => (
-              <div key={recipe._id}>
-                <h2>{recipe.name}</h2>
-                <p>{recipe.description}</p>
-
-                <h2>Ingredients:</h2>
-                <ul>
-                  {recipe.ingredients.map((ingredient: any) => (
-                    <li key={ingredient._id}>{ingredient.name}</li>
-                  ))}
-                </ul>
-              </div>
-            ))} */}
           </div>
         </div>
       </section>
