@@ -16,12 +16,6 @@ const recipe = {
         {
             name: 'ingredients',
             title: 'Ingredients',
-            type: 'reference',
-            to: [{type: 'ingredient'}],
-        },
-        {
-            name: 'ingredients',
-            title: 'Ingredients',
             type: 'array',
             of: [{
                 type: 'object',
